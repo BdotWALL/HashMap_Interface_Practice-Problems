@@ -12,6 +12,6 @@ Dictionary of Many Translations
 
 Interface Practice Problems:
 
-TacoBoxex
+TacoBoxes
 
 Interface  in a Box
