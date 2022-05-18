@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class Box implements Packable {
     private double maxCapacity;
@@ -34,7 +36,14 @@ public class Box implements Packable {
 
     @Override
     public String toString() {
-        return "Box: " + this.numOfItems + " items, total weight " + this.weight() + " kg";
+        DecimalFormat d = new DecimalFormat("#.##");
+        
+        if(this.numOfItems == 0 || this.numOfItems >=2){
+
+        return "The box weighs " + d.format(this.weight()) + " kgs, and it has "+ this.numOfItems + " items.";
+        } 
+        
+		return "The box weighs " +  d.format(this.weight())+ " kgs, and it has "+ this.numOfItems + " item.";
     } 
     
 }

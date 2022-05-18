@@ -10,6 +10,7 @@ public class Main {
         smallBox.add( new CD("Pusha T", "Its Almost Dry", 2022));
         smallBox.add( new CD("BabyFace Ray", "FACE", 2022));
         smallBox.add( new CD("Doeboy", "Oh Really", 2022));
+        
         System.out.println(smallBox);
         mediumBox.add(smallBox);
         mediumBox.add(new Book("Green", "The 48 Laws of Power", 7));
